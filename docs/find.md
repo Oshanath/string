@@ -2,7 +2,7 @@
 Provide a way to search inside strings, search and replace strings. 
 Can search for both strings and characters as well as using regex.
 
-1. find_all()
+[1. find_all()](https://github.com/Oshanath/string/blob/main/docs/find.md#find-all)
 
 ### Find all
 use the string::find_all() function to find all occurences of a particular substring or a character inside a string.
