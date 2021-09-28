@@ -33,8 +33,7 @@ std::vector<size_t> find_all(
 std::string a = "Henllo thenren my namen is enlenphant";
 
 // Searching for all occurences of the substring "en" inside this string
-std::string str = "en";
-std::vector<size_t> list = string::find_all(a, str);
+std::vector<size_t> list = string::find_all("en", str);
 
 // Searching for the first 3 occurences of the character 'e' inside this string
 char c = 'e';
