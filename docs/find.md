@@ -4,7 +4,7 @@ Can search for both strings and characters as well as using regex.
 
 [1. find_all()](https://github.com/Oshanath/string/blob/main/docs/find.md#find-all)
 
-### Find all
+### 1. Find all
 use the string::find_all() function to find all occurences of a particular substring or a character inside a string.
 It will return a vector of indices of the occurences.
 
