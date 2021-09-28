@@ -54,3 +54,8 @@ build/.cmake/api/v1/reply/target-NightlyTest-Debug-7a1f0cc62b8bd39d47a9.json
 build/.cmake/api/v1/reply/target-NightlyUpdate-Debug-ee0ccde045b9aa2fac9d.json
 build/.cmake/api/v1/reply/target-string-Debug-df5b399591b039921ce7.json
 build/.cmake/api/v1/reply/toolchains-v1-56bf92e63bc32ee7c106.json
+build/string.exe
+build/string.pdb
+build/.cmake/api/v1/reply/codemodel-v2-2df035980db19c67a342.json
+build/.cmake/api/v1/reply/index-2021-09-28T19-24-07-0513.json
+build/.cmake/api/v1/reply/target-string-Debug-5088819f521957b8c42c.json
