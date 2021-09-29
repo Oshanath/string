@@ -22,9 +22,9 @@
 
 ### 1. Find all
 Find all needles in the haystack
-```
+
 std::vector<size_t> find_all([haystack, needle](https://github.com/Oshanath/string/blob/main/docs/find.md#parameters), occurences = 1);
-```
+
 #### Example
 ```
 std::string str = "Henllo thenren my namen is enlenphant";
@@ -39,9 +39,9 @@ std::vector<size_t> list2 = string::find_all(str, c, 3);
 ### 2. Find first
 Find the first needle in the haystack.
 
-```
+
 size_t find_first([haystack, needle](https://github.com/Oshanath/string/blob/main/docs/find.md#parameters));
-```
+
 #### Example
 ```
 std::string sample = "Henllo my namen is enlenphant";
@@ -56,9 +56,9 @@ size_t index_of_e = string::find_first(sample, 'e');
 ### 3. Find last
 Find the last needle in the haystack.
 
-```
+
 size_t find_last([haystack, needle](https://github.com/Oshanath/string/blob/main/docs/find.md#parameters));
-```
+
 #### Example
 ```
 std::string sample = "Henllo my namen is enlenphant";
