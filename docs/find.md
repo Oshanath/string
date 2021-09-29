@@ -2,29 +2,27 @@
 Provide a way to search inside strings, search and replace strings. 
 Can search for both strings and characters as well as using regex.
 
+All find functions have a haystack parameter and a needle parameter. The find functions find the needles in the haystack.
+
+### Parameters
+Haystack should be a string. (std::string or a c-string)
+Needle can be a char or a string
+
+### Optional parameters (Only some functions accept these)
+size_t occurences - The maximum number of results that the function should find. All results after are ignored.
+
+### Return types
+std::vector<size_t> - The std::vector containing all results. (No results = empty container)
+size_t - A single result. Usually an index. If the search yields no results, the function will return std::string::npos
+
 [1. find_all()](https://github.com/Oshanath/string/blob/main/docs/find.md#find-all)<br>
 [2. find_first()](https://github.com/Oshanath/string/blob/main/docs/find.md#2-find-first)<br>
 [3. find_last()](https://github.com/Oshanath/string/blob/main/docs/find.md#3-find-last)
 
 ### 1. Find all
-use the string::find_all() function to find all, or a number of occurences of a particular substring or a character inside a string.
-It will return a vector of indices of the occurences.
-#### Declaration
+Find all needles in the haystack
 ```
-/**
- * Find the indices of all occurences of a certain substring or a character inside a string
- */
-std::vector<size_t> find_all(
-    const std::string& haystack, 
-    const std::string& needle, 
-    size_t occurences = -1
-);
-
-std::vector<size_t> find_all(
-    const std::string& haystack, 
-    const char c, 
-    size_t occurences = -1
-);
+std::vector<size_t> find_all(haystack, needle, occurences = 1);
 ```
 #### Example
 ```
@@ -38,26 +36,10 @@ char c = 'e';
 std::vector<size_t> list2 = string::find_all(str, c, 3);
 ```
 ### 2. Find first
-Use the string::find_first() to find the first occurence of a particular string or a character inside another string. It will return the index of the occurence if it exists, and std::string::npos otherwise.
+Find the first needle in the haystack.
 
-#### Declaration
 ```
-/**
- * Find the first occurence of a given substring or a character needle inside a string haystack.
- * 
- * @param haystack The string to search in
- * @param needle The string or character to search for
- * @return size_t The index if the needle exists, std::string::npos otherwise
- */
-size_t find_first(
-    const std::string& haystack,
-    const std::string& needle
-);
-
-size_t find_first(
-    const std::string& haystack,
-    const char needle
-);
+size_t find_first(haystack, needle);
 ```
 #### Example
 ```
@@ -71,26 +53,10 @@ size_t index_of_e = string::find_first(sample, 'e');
 ```
 
 ### 3. Find last
-Use the string::find_last() to find the last occurence of a particular string or a character inside another string. It will return the index of the occurence if it exists, and std::string::npos otherwise.
+Find the last needle in the haystack.
 
-#### Declaration
 ```
-/**
- * Find the last occurence of a given substring or character needle inside a string haystack.
- * 
- * @param haystack The string to search in
- * @param needle The string or character to search for
- * @return size_t The index of the last needle if the needle exists, std::string::npos otherwise
- */
-size_t find_last(
-    const std::string& haystack,
-    const std::string& needle
-);
-
-size_t find_last(
-    const std::string& haystack,
-    const char needle
-);
+size_t find_last(haystack, needle);
 ```
 #### Example
 ```
