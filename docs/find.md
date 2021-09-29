@@ -3,7 +3,7 @@ Provide a way to search inside strings, search and replace strings.
 Can search for both strings and characters as well as using regex.
 
 [1. find_all()](https://github.com/Oshanath/string/blob/main/docs/find.md#find-all)<br>
-[2. find_first()](https://github.com/Oshanath/string/blob/main/docs/find.md#2-find-first)
+[2. find_first()](https://github.com/Oshanath/string/blob/main/docs/find.md#2-find-first)<br>
 [3. find_last()](https://github.com/Oshanath/string/blob/main/docs/find.md#3-find-last)
 
 ### 1. Find all
