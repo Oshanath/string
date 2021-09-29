@@ -1,19 +1,20 @@
 # Find functions
-Provide a way to search inside strings, search and replace strings. 
-Can search for both strings and characters as well as using regex.
+* Provide a way to search inside strings, search and replace strings.
+* Can search for both strings and characters as well as using regex.
 
-All find functions have a haystack parameter and a needle parameter. The find functions find the needles in the haystack.
 
 ### Parameters
-Haystack should be a string. (std::string or a c-string)
-Needle can be a char or a string
+* All find functions have a haystack parameter and a needle parameter.
+* The find functions find the needles in the haystack.
+* Haystack should be a string. (std::string or a c-string)
+* Needle can be a char or a string
 
 ### Optional parameters (Only some functions accept these)
-size_t occurences - The maximum number of results that the function should find. All results after are ignored.
+* size_t occurences - The maximum number of results that the function should find. All results after are ignored.
 
 ### Return types
-std::vector<size_t> - The std::vector containing all results. (No results = empty container)
-size_t - A single result. Usually an index. If the search yields no results, the function will return std::string::npos
+* std::vector<size_t> - The std::vector containing all results. (No results = empty container)
+* size_t - A single result. Usually an index. If the search yields no results, the function will return std::string::npos
 
 [1. find_all()](https://github.com/Oshanath/string/blob/main/docs/find.md#find-all)<br>
 [2. find_first()](https://github.com/Oshanath/string/blob/main/docs/find.md#2-find-first)<br>
