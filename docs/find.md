@@ -23,7 +23,7 @@
 ### 1. Find all
 Find all needles in the haystack
 
-std::vector<size_t> find_all([haystack, needle](https://github.com/Oshanath/string/blob/main/docs/find.md#parameters), occurences = 1);
+std::vector<size_t> find_all([haystack, needle](https://github.com/Oshanath/string/blob/main/docs/find.md#parameters), [occurences = 1](https://github.com/Oshanath/string/blob/main/docs/find.md#optional-parameters-only-some-functions-accept-these));
 
 #### Example
 ```
