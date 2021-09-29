@@ -32,14 +32,14 @@ std::vector<size_t> find_all(
 ```
 #### Example
 ```
-std::string a = "Henllo thenren my namen is enlenphant";
+std::string str = "Henllo thenren my namen is enlenphant";
 
 // Searching for all occurences of the substring "en" inside this string
-std::vector<size_t> list = string::find_all("en", str);
+std::vector<size_t> list = string::find_all(str, "en");
 
 // Searching for the first 3 occurences of the character 'e' inside this string
 char c = 'e';
-std::vector<size_t> list = string::find_all(a, c, 3);
+std::vector<size_t> list2 = string::find_all(str, c, 3);
 ```
 ### 2. Find first
 Use the string::find_first() to find the first occurence of a particular string or a character inside another string. It will return the index of the occurence if it exists, and std::string::npos otherwise.
