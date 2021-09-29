@@ -13,11 +13,6 @@ It will return a vector of indices of the occurences.
 ```
 /**
  * Find the indices of all occurences of a certain substring or a character inside a string
- * 
- * @param haystack The string that needs to be searched
- * @param needle The substring or character to look for inside the haystack
- * @param occurences maximum number of search results needed
- * @return std::vector<size_t> The container of indices of the needle substring inside the haystack
  */
 std::vector<size_t> find_all(
     const std::string& haystack, 
