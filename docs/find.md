@@ -56,14 +56,52 @@ size_t find_first(
     const std::string& haystack,
     const std::string& needle
 );
+
+size_t find_first(
+    const std::string& haystack,
+    const char needle
+);
 ```
 #### Example
 ```
-std::string sample = "Hello";
+std::string sample = "Henllo my namen is enlenphant";
     
 //Find the index where "ll" appears in sample
 size_t index_of_ll = string::find_first(sample, "ll");
 
 //Find the index where the character 'e' appears in sample
-size_t index_of_e - string::find_first(sample, 'e');
+size_t index_of_e = string::find_first(sample, 'e');
+```
+
+### 3. Find last
+Use the string::find_last() to find the last occurence of a particular string or a character inside another string. It will return the index of the occurence if it exists, and std::string::npos otherwise.
+
+#### Declaration
+```
+/**
+ * Find the last occurence of a given substring needle inside a string haystack.
+ * 
+ * @param haystack The string to search in
+ * @param needle The string to search for
+ * @return size_t The index of the last needle if the needle exists, std::string::npos otherwise
+ */
+size_t find_last(
+    const std::string& haystack,
+    const std::string& needle
+);
+
+size_t find_last(
+    const std::string& haystack,
+    const char needle
+);
+```
+#### Example
+```
+std::string sample = "Henllo my namen is enlenphant";
+    
+//Find the index where "ll" appears in sample for the last time
+size_t index_of_ll = string::find_last(sample, "ln");
+
+//Find the index where the character 'e' appears in sample for the last time
+size_t index_of_e = string::find_last(sample, 'e');
 ```

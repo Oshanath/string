@@ -70,7 +70,7 @@ std::vector<size_t> find_all(
  * 
  * @param haystack The string to search in
  * @param needle The string to search for
- * @return size_t The index if the needle exists, std::string::npos otherwise
+ * @return size_t The index of the first needle if the needle exists, std::string::npos otherwise
  */
 size_t find_first(
     const std::string& haystack,
@@ -84,13 +84,41 @@ size_t find_first(
  * 
  * @param haystack The string to search in
  * @param needle The character to search for
- * @return size_t The index if the needle exists, std::string::npos otherwise
+ * @return size_t The index of the first needle if the needle exists, std::string::npos otherwise
  */
 size_t find_first(
     const std::string& haystack,
     const char needle
 ){
     return haystack.find(needle);
+}
+
+/**
+ * Find the last occurence of a given substring needle inside a string haystack.
+ * 
+ * @param haystack The string to search in
+ * @param needle The string to search for
+ * @return size_t The index of the last needle if the needle exists, std::string::npos otherwise
+ */
+size_t find_last(
+    const std::string& haystack,
+    const std::string& needle
+){
+    return haystack.rfind(needle);
+}
+
+/**
+ * Find the last occurence of a given character needle inside a string haystack.
+ * 
+ * @param haystack The string to search in
+ * @param needle The character to search for
+ * @return size_t The index of the last needle if the needle exists, std::string::npos otherwise
+ */
+size_t find_last(
+    const std::string& haystack,
+    const char needle
+){
+    return haystack.rfind(needle);
 }
 
 
