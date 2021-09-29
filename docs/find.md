@@ -12,10 +12,10 @@ It will return a vector of indices of the occurences.
 #### Declaration
 ```
 /**
- * Find the indices of all occurences of a certain substring inside a string
+ * Find the indices of all occurences of a certain substring or a character inside a string
  * 
  * @param haystack The string that needs to be searched
- * @param needle The substring to look for inside the haystack
+ * @param needle The substring or character to look for inside the haystack
  * @param occurences maximum number of search results needed
  * @return std::vector<size_t> The container of indices of the needle substring inside the haystack
  */
@@ -48,10 +48,10 @@ Use the string::find_first() to find the first occurence of a particular string 
 #### Declaration
 ```
 /**
- * Find the first occurence of a given substring needle inside a string haystack.
+ * Find the first occurence of a given substring or a character needle inside a string haystack.
  * 
  * @param haystack The string to search in
- * @param needle The string to search for
+ * @param needle The string or character to search for
  * @return size_t The index if the needle exists, std::string::npos otherwise
  */
 size_t find_first(
@@ -81,10 +81,10 @@ Use the string::find_last() to find the last occurence of a particular string or
 #### Declaration
 ```
 /**
- * Find the last occurence of a given substring needle inside a string haystack.
+ * Find the last occurence of a given substring or character needle inside a string haystack.
  * 
  * @param haystack The string to search in
- * @param needle The string to search for
+ * @param needle The string or character to search for
  * @return size_t The index of the last needle if the needle exists, std::string::npos otherwise
  */
 size_t find_last(
